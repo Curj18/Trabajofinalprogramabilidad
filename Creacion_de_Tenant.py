@@ -70,6 +70,11 @@ print(json.dumps(tenant.get_json(), sort_keys=True, indent=2, separators=(',',':
 # push configuracion a la apic
 resp = session.push_to_apic(tenant.get_url(), data=tenant.get_json())
 
+# test solicitud de configuracion solo si hay equivocaciones
+if resp.ok:
+     print("\n{}: {}\n\n{} is ready for use".format(resp.status_code, resp.reason, tenant.name))
+else:
+     print("\n{}: {}\n\n{} was not created!\n\n Error: {}".format(resp.status_code, resp.reason, subnet.name, resp.content))
 
 
 
