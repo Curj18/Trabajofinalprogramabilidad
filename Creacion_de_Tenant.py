@@ -52,4 +52,6 @@ epg_database = EPG("Database", app_profile)
 epg_database.add_bd(bridge_domain)
 epg_database.provide(contract_database)
 
+# lista de tenants solo si es necesario
+tenant_list = Tenant.get(session)
 
