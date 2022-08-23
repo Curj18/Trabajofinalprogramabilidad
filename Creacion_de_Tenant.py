@@ -37,3 +37,7 @@ contract_subject_http.add_filter(filter_http)
 contract_database = Contract("database", tenant)
 contract_subject_sql = ContractSubject("sql", contract_database)
 contract_subject_sql.add_filter(filter_sql)
+
+# perfil app
+app_profile = AppProfile("Example_App", tenant)
+
