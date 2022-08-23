@@ -91,3 +91,5 @@ epg_list = EPG.get(session, app_profile, tenant)
 for epg in epg_list:
     print(epg.name)
 
+# salir del print
+exit()
