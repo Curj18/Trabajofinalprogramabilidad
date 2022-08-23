@@ -67,6 +67,9 @@ print("\n{}\n\n{}".format(tenant.get_url(), tenant.get_json()))
 import json
 print(json.dumps(tenant.get_json(), sort_keys=True, indent=2, separators=(',',':')))
 
+# push configuracion a la apic
+resp = session.push_to_apic(tenant.get_url(), data=tenant.get_json())
+
 
 
 
