@@ -81,4 +81,7 @@ new_tenant_list = Tenant.get(session)
 for tn in new_tenant_list:
     print(tn.name)
 
-
+#chekear la app list en el nuevo tenant
+app_list = AppProfile.get(session, tenant)
+for app in app_list:
+    print(app.name)
