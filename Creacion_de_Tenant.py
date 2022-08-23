@@ -55,3 +55,8 @@ epg_database.provide(contract_database)
 # lista de tenants solo si es necesario
 tenant_list = Tenant.get(session)
 
+#mostrar lista de todos los tenant solo si es necesario
+tenant_list
+for tn in tenant_list:
+    print(tn.name)
+
