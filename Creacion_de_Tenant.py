@@ -60,3 +60,6 @@ tenant_list
 for tn in tenant_list:
     print(tn.name)
 
+# imprimir url y configuracion json
+print("\n{}\n\n{}".format(tenant.get_url(), tenant.get_json()))
+
