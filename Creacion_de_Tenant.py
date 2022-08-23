@@ -47,3 +47,9 @@ epg_web.add_bd(bridge_domain)
 epg_web.provide(contract_web)
 epg_web.consume(contract_database)
 
+# creando database epg and asociarla a bridge domain and "contratos"
+epg_database = EPG("Database", app_profile)
+epg_database.add_bd(bridge_domain)
+epg_database.provide(contract_database)
+
+
