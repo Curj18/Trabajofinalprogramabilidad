@@ -15,3 +15,8 @@ vrf = Context("Example_VRF", tenant)
 bridge_domain = BridgeDomain("Example_BD", tenant)
 bridge_domain.add_context(vrf)
 
+# creacion de subnet publica y asignar gateway
+subnet = Subnet("Example_Subnet", bridge_domain)
+subnet.set_scope("public")
+subnet.set_addr("192.168.0.1/24")
+
