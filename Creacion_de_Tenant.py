@@ -41,3 +41,9 @@ contract_subject_sql.add_filter(filter_sql)
 # perfil app
 app_profile = AppProfile("Example_App", tenant)
 
+#web epg y asociarla a bridge domain y contratos
+epg_web = EPG("Web", app_profile)
+epg_web.add_bd(bridge_domain)
+epg_web.provide(contract_web)
+epg_web.consume(contract_database)
+
