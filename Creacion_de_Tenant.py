@@ -33,7 +33,7 @@ contract_web = Contract("web", tenant)
 contract_subject_http = ContractSubject("http", contract_web)
 contract_subject_http.add_filter(filter_http)
 
-# "contrato" database asociado a SQL
+# "contrato" database asociado a SQl
 contract_database = Contract("database", tenant)
 contract_subject_sql = ContractSubject("sql", contract_database)
 contract_subject_sql.add_filter(filter_sql)
