@@ -20,3 +20,7 @@ subnet = Subnet("Example_Subnet", bridge_domain)
 subnet.set_scope("public")
 subnet.set_addr("192.168.0.1/24")
 
+# filtrado HTTP y entry
+filter_http = Filter("http", tenant)
+filter_entry_tcp80 = FilterEntry("tcp-80", filter_http, etherT="ip", prot="tcp", dFromPort="http", dToPort="http")
+
