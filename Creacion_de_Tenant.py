@@ -85,3 +85,9 @@ for tn in new_tenant_list:
 app_list = AppProfile.get(session, tenant)
 for app in app_list:
     print(app.name)
+
+# chekear la lista epg en la nueva app
+epg_list = EPG.get(session, app_profile, tenant)
+for epg in epg_list:
+    print(epg.name)
+
