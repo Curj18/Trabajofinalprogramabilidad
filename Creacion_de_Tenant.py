@@ -28,3 +28,8 @@ filter_entry_tcp80 = FilterEntry("tcp-80", filter_http, etherT="ip", prot="tcp",
 filter_sql = Filter("sql", tenant)
 filter_entry_tcp1433 = FilterEntry("tcp-1433", filter_sql, etherT="ip", prot="tcp", dFromPort="1433", dToPort="1433")
 
+# "contrato" web asociado a HTTP
+contract_web = Contract("web", tenant)
+contract_subject_http = ContractSubject("http", contract_web)
+contract_subject_http.add_filter(filter_http)
+
