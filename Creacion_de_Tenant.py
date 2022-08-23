@@ -24,3 +24,7 @@ subnet.set_addr("192.168.0.1/24")
 filter_http = Filter("http", tenant)
 filter_entry_tcp80 = FilterEntry("tcp-80", filter_http, etherT="ip", prot="tcp", dFromPort="http", dToPort="http")
 
+# filtrado SQL y entry
+filter_sql = Filter("sql", tenant)
+filter_entry_tcp1433 = FilterEntry("tcp-1433", filter_sql, etherT="ip", prot="tcp", dFromPort="1433", dToPort="1433")
+
