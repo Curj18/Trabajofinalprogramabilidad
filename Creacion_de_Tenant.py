@@ -76,5 +76,9 @@ if resp.ok:
 else:
      print("\n{}: {}\n\n{} was not created!\n\n Error: {}".format(resp.status_code, resp.reason, subnet.name, resp.content))
 
+# re-revision ala tenant list
+new_tenant_list = Tenant.get(session)
+for tn in new_tenant_list:
+    print(tn.name)
 
 
