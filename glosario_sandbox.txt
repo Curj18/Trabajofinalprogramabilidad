@@ -1,0 +1,11 @@
+VRF : utilizando VRF se puede asignar la misma dirección IP a dos interfaces diferentes en un router simultáneamente.
+
+Tenant : "unidades de negocio" que tienen flujos de administración y datos separados
+
+bridge_domain :  interfaz lógica que permite el flujo bidireccional de tráfico entre una red puenteada de Capa 2 y un tráfico de red enrutado de Capa 3
+
+contract :  la máquina virtual A (VM) está conectada a Leaf1 y existe un contrato que le permite comunicarse con VM-B, que está conectada a Leaf2. El contrato permite el protocolo de mensajes de control de Internet (ICMP) y HTTP.
+
+web epg :  Proporcionan una agrupación lógica de objetos que requieren políticas similares. Por ejemplo, un EPG puede ser el grupo de elementos que componen un nivel web de la aplicación
+
+
