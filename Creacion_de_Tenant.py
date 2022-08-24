@@ -3,6 +3,8 @@ from credentials import *
 from acitoolkit.acitoolkit import *
 
 # Iniciando sesion en  el sandbox
+from credentials import URL, LOGIN, PASSWORD
+
 session = Session(URL, LOGIN, PASSWORD)
 session.login()
 
