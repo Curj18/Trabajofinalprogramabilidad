@@ -95,3 +95,6 @@ for epg in epg_list:
 
 # salir del print
 exit()
+
+#agradecimientos al usuario "klevenstein" de github ya que parte del codigo se realizo con la ayuda de su trabajo.
+
